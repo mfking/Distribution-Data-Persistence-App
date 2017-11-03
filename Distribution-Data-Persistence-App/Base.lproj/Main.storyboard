@@ -17,9 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Device Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fUB-JM-Ykn">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Device Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fUB-JM-Ykn">
                                 <rect key="frame" x="80" y="293" width="215" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -32,9 +31,8 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Serial Number" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CGd-Yh-qXh">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Serial Number" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CGd-Yh-qXh" customClass="VSTextField" customModule="Distribution_Data_Persistence_App" customModuleProvider="target">
                                 <rect key="frame" x="80" y="349" width="215" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" smartDashesType="yes"/>
@@ -52,16 +50,14 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="format" value="xxxx-xxxxx"/>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="MFA Code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B74-Vt-D5M">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="MFA Code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B74-Vt-D5M" customClass="VSTextField" customModule="Distribution_Data_Persistence_App" customModuleProvider="target">
                                 <rect key="frame" x="80" y="404" width="215" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lfZ-UT-S7k">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lfZ-UT-S7k">
                                 <rect key="frame" x="216" y="455" width="79" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Add Device"/>
                                 <connections>
                                     <action selector="addDevice:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6tZ-YM-XOz"/>
@@ -78,22 +74,113 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lfZ-UT-S7k" secondAttribute="bottom" constant="182" id="28t-iC-Z8R"/>
+                            <constraint firstItem="B74-Vt-D5M" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Hqu-t1-YlJ"/>
+                            <constraint firstItem="CGd-Yh-qXh" firstAttribute="top" secondItem="fUB-JM-Ykn" secondAttribute="bottom" constant="26" id="JYa-CA-YKI"/>
                             <constraint firstItem="yjo-Xp-A0U" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="O4R-AH-Ct7"/>
+                            <constraint firstItem="B74-Vt-D5M" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="Rj0-49-HCQ"/>
+                            <constraint firstItem="B74-Vt-D5M" firstAttribute="top" secondItem="CGd-Yh-qXh" secondAttribute="bottom" constant="25" id="SGw-SW-IGr"/>
+                            <constraint firstItem="fUB-JM-Ykn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="UUl-PQ-wCG"/>
+                            <constraint firstItem="lfZ-UT-S7k" firstAttribute="top" secondItem="B74-Vt-D5M" secondAttribute="bottom" constant="21" id="Waw-C8-AA0"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yjo-Xp-A0U" secondAttribute="trailing" constant="16" id="bXg-qO-vv2"/>
+                            <constraint firstItem="CGd-Yh-qXh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="c6C-6A-OAO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lfZ-UT-S7k" secondAttribute="trailing" constant="80" id="nQo-42-V0p"/>
+                            <constraint firstItem="fUB-JM-Ykn" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="nwG-1v-bTh"/>
+                            <constraint firstItem="CGd-Yh-qXh" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="yiI-Oz-VNk"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="AddDeviceButton" destination="lfZ-UT-S7k" id="AwP-g2-wtn"/>
                         <outlet property="DeviceListButton" destination="yjo-Xp-A0U" id="HSd-Cg-nYq"/>
-                        <outlet property="MFAField" destination="B74-Vt-D5M" id="z94-eX-mT2"/>
+                        <outlet property="MFAField" destination="B74-Vt-D5M" id="A0p-wn-ndK"/>
                         <outlet property="nameField" destination="fUB-JM-Ykn" id="q6M-GF-CMf"/>
-                        <outlet property="serNumField" destination="CGd-Yh-qXh" id="aZn-7v-rSz"/>
+                        <outlet property="serNumField" destination="CGd-Yh-qXh" id="i5M-rd-zEJ"/>
+                        <segue destination="wHK-rD-fkb" kind="show" identifier="showDeviceInfo" id="7W0-XF-RDd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+        <!--Device Info View Controller-->
+        <scene sceneID="Hwh-jk-I0K">
+            <objects>
+                <viewController id="wHK-rD-fkb" customClass="DeviceInfoViewController" customModule="Distribution_Data_Persistence_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BdC-cI-KiA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="BGv-7D-Yfw">
+                                <rect key="frame" x="76.5" y="120" width="222" height="97"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Device Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2xv-0g-opB">
+                                        <rect key="frame" x="0.0" y="0.0" width="200.5" height="42"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="xQ8-WB-QpB">
+                                        <rect key="frame" x="0.0" y="49" width="222" height="20.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="serial num: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m3o-G1-sOD">
+                                                <rect key="frame" x="0.0" y="0.0" width="88" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="serial number var" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iEH-pw-iek">
+                                                <rect key="frame" x="90" y="0.0" width="132" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="OJ1-NI-SdK">
+                                        <rect key="frame" x="0.0" y="76.5" width="102" height="20.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MFA:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EJo-EU-nI0">
+                                                <rect key="frame" x="0.0" y="0.0" width="39" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="mfa var" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qmJ-v1-fxp">
+                                                <rect key="frame" x="45" y="0.0" width="57" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1xX-lp-Jqc">
+                                <rect key="frame" x="16" y="20" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="dismiss:" destination="wHK-rD-fkb" eventType="touchUpInside" id="SSh-3I-w2E"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="BGv-7D-Yfw" firstAttribute="centerX" secondItem="LEC-dK-J8a" secondAttribute="centerX" id="JUn-8t-cYF"/>
+                            <constraint firstItem="BGv-7D-Yfw" firstAttribute="top" secondItem="LEC-dK-J8a" secondAttribute="top" constant="100" id="xbD-rS-Uzt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="LEC-dK-J8a"/>
+                    </view>
+                    <connections>
+                        <outlet property="deviceName" destination="2xv-0g-opB" id="YjP-QI-LRS"/>
+                        <outlet property="mfaCode" destination="qmJ-v1-fxp" id="2vt-Ub-eDU"/>
+                        <outlet property="serNum" destination="iEH-pw-iek" id="Kaz-dG-Uds"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C7w-mM-sfh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="981.60000000000002" y="133.5832083958021"/>
         </scene>
     </scenes>
 </document>

@@ -13,6 +13,7 @@ import CoreData
 import Popover
 
 let RESET = false
+var selected = "Device Name"
 
 class ViewController: UIViewController {
 
@@ -21,8 +22,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var DeviceListButton: UIButton!
     
     @IBOutlet weak var nameField: UITextField!
-    @IBOutlet weak var serNumField: UITextField!
-    @IBOutlet weak var MFAField: UITextField!
+    @IBOutlet weak var MFAField: VSTextField!
+    @IBOutlet weak var serNumField: VSTextField!
     
     //person for cordata
     @objc var people = [Person]()
@@ -159,6 +160,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        serNumField.setFormatting("####-#####", replacementChar: "#")
+        MFAField.setFormatting("######", replacementChar: "#")
+        
         let appDelegate =
             UIApplication.shared.delegate as! AppDelegate
         
@@ -196,6 +200,13 @@ extension ViewController: UITableViewDelegate {
         self.popover.dismiss()
         //TO DO:
         // add funtionality to buttons within popover
+        let indexPath = tableView.indexPathForSelectedRow //optional, to get from any UIButton for example
+        
+        let currentCell = tableView.cellForRow(at: indexPath!) as! UITableViewCell
+        
+        selected = (currentCell.textLabel?.text!)!
+        
+        performSegue(withIdentifier: "showDeviceInfo", sender: self)
     }
 }
 
@@ -210,5 +221,6 @@ extension ViewController: UITableViewDataSource {
         cell.textLabel?.text = self.people[(indexPath as NSIndexPath).row].name
         return cell
     }
+    
 }
 

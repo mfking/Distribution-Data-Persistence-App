@@ -17,6 +17,8 @@
 		8A5F466E1FACC1AD00F3F3D5 /* Distribution_Data_Persistence_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5F466D1FACC1AD00F3F3D5 /* Distribution_Data_Persistence_AppTests.swift */; };
 		8A5F46791FACC1AD00F3F3D5 /* Distribution_Data_Persistence_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5F46781FACC1AD00F3F3D5 /* Distribution_Data_Persistence_AppUITests.swift */; };
 		8A5F46871FACDC2F00F3F3D5 /* SerialNumTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5F46861FACDC2F00F3F3D5 /* SerialNumTextField.swift */; };
+		8A8567941FAD188800D6B8BD /* DeviceInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8567931FAD188800D6B8BD /* DeviceInfoViewController.swift */; };
+		8A8567961FAD1F5000D6B8BD /* VSTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8567951FAD1F5000D6B8BD /* VSTextField.swift */; };
 		A7629D4A13AF1AF361F18960 /* Pods_Distribution_Data_Persistence_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 424699B9E6207084F6D54453 /* Pods_Distribution_Data_Persistence_AppUITests.framework */; };
 		F25B3BF9017DAC6C97821214 /* Pods_Distribution_Data_Persistence_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E631ACADC2F5134A8588D57B /* Pods_Distribution_Data_Persistence_AppTests.framework */; };
 /* End PBXBuildFile section */
@@ -59,6 +61,8 @@
 		8A5F46781FACC1AD00F3F3D5 /* Distribution_Data_Persistence_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Distribution_Data_Persistence_AppUITests.swift; sourceTree = "<group>"; };
 		8A5F467A1FACC1AD00F3F3D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A5F46861FACDC2F00F3F3D5 /* SerialNumTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerialNumTextField.swift; sourceTree = "<group>"; };
+		8A8567931FAD188800D6B8BD /* DeviceInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfoViewController.swift; sourceTree = "<group>"; };
+		8A8567951FAD1F5000D6B8BD /* VSTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VSTextField.swift; sourceTree = "<group>"; };
 		C97B5AB415BE8868A2065C48 /* Pods-Distribution-Data-Persistence-AppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Distribution-Data-Persistence-AppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Distribution-Data-Persistence-AppUITests/Pods-Distribution-Data-Persistence-AppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E631ACADC2F5134A8588D57B /* Pods_Distribution_Data_Persistence_AppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Distribution_Data_Persistence_AppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF97A396F7B7BCEED3E02572 /* Pods-Distribution-Data-Persistence-AppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Distribution-Data-Persistence-AppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Distribution-Data-Persistence-AppUITests/Pods-Distribution-Data-Persistence-AppUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -139,6 +143,8 @@
 				8A5F46611FACC1AD00F3F3D5 /* LaunchScreen.storyboard */,
 				8A5F46641FACC1AD00F3F3D5 /* Info.plist */,
 				8A5F465C1FACC1AD00F3F3D5 /* Distribution_Data_Persistence_App.xcdatamodeld */,
+				8A8567931FAD188800D6B8BD /* DeviceInfoViewController.swift */,
+				8A8567951FAD1F5000D6B8BD /* VSTextField.swift */,
 			);
 			path = "Distribution-Data-Persistence-App";
 			sourceTree = "<group>";
@@ -469,6 +475,8 @@
 				8A5F46871FACDC2F00F3F3D5 /* SerialNumTextField.swift in Sources */,
 				8A5F46581FACC1AD00F3F3D5 /* ViewController.swift in Sources */,
 				8A5F46561FACC1AD00F3F3D5 /* AppDelegate.swift in Sources */,
+				8A8567941FAD188800D6B8BD /* DeviceInfoViewController.swift in Sources */,
+				8A8567961FAD1F5000D6B8BD /* VSTextField.swift in Sources */,
 				8A5F465E1FACC1AD00F3F3D5 /* Distribution_Data_Persistence_App.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
