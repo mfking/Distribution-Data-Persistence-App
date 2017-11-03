@@ -1,0 +1,1063 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0545AC9272E8418E5DFE5523C2781BC5 /* AkiraTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF8B6FB104321CCED0756B9AD1D8805 /* AkiraTextField.swift */; };
+		10512357D4E5DC29C9285A06476650DB /* HoshiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DE48C471015FE8637D06D7AAB4EC56 /* HoshiTextField.swift */; };
+		1F860238AC6774CFAF7E5176023AFE36 /* YoshikoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C02F346A88455C59FCDADC142401773 /* YoshikoTextField.swift */; };
+		32C72C084A0E74D87F3CF83CA9BC6223 /* MadokaTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88710D9DDD6A8FD01E3A13D7B4894F5 /* MadokaTextField.swift */; };
+		36804D478F341AF922F0524C45764506 /* Popover-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C9CA4FEDDB776877C821234E60262B /* Popover-dummy.m */; };
+		3727A57CF0D78A4CD9B07EF6ADA49371 /* Pods-Distribution-Data-Persistence-AppUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E72E26C0729D02B279C4697E988AFE93 /* Pods-Distribution-Data-Persistence-AppUITests-dummy.m */; };
+		4D6BD608864A213B2598BB7300A0D413 /* YokoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5C2E67FDE1F75BF903A1E7849B0BCB /* YokoTextField.swift */; };
+		4E3ADCB1391900DF0741E677789D5FF1 /* Pods-Distribution-Data-Persistence-App-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 445F98C0BC04632F32EAD99B57F2F03F /* Pods-Distribution-Data-Persistence-App-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4F92E53B15DC31966F97C2257DED7C98 /* Pods-Distribution-Data-Persistence-AppTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CE99CE97AC8754BA7F49223EBC78A898 /* Pods-Distribution-Data-Persistence-AppTests-dummy.m */; };
+		52CFCA00EDD5BF8C3C06638E3BCD27E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		55764E7C61FCF7D458C1769B056B5235 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		67D55B1B076162B0D32C7936960AB5F0 /* KaedeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC15FC2FA14F8C8D8B3E75F3E5EDD2B /* KaedeTextField.swift */; };
+		68F2415C0AE2330AE2031D28305B3A3A /* Popover.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92329640D81FDF5962994D2E12816F2 /* Popover.swift */; };
+		75B913F250CA8D51CC01E3D946515B3A /* Popover-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 365DBD07B555176B42B16113D26BC520 /* Popover-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7998BAF5AF2141F3BD16F99E32FFCE64 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		7AF1FD1E1BC9905F464EE38B623D28C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		8646F7FBBE16FC56161D82A1BCFE41C8 /* IsaoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DEEA748592483C4736BEE2F8E890E7 /* IsaoTextField.swift */; };
+		92AA585FD4B03CFBA0D3ED1EED78CDEC /* JiroTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6A6A37FF2E40E9095A928CD6AACB16 /* JiroTextField.swift */; };
+		A7652730A2546A840FAAE74FB7003A6D /* Pods-Distribution-Data-Persistence-AppUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C815DA142397CF8F681B889AE84690E2 /* Pods-Distribution-Data-Persistence-AppUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB3BA940ECDA9ED6AE5C9B685AF2CBA7 /* TextFieldEffects-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C03F20A9A0A88519C203D7FA355DA94 /* TextFieldEffects-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C165B0494D547517BEE4EB8E50B934B7 /* Pods-Distribution-Data-Persistence-App-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9676DF74884109F05D1E5099D150FCBB /* Pods-Distribution-Data-Persistence-App-dummy.m */; };
+		C46F27703B946F897E318C168547A816 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		C61B9BFB769EE6059E1368466DD2F919 /* Pods-Distribution-Data-Persistence-AppTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 02FE7C65473469293727965FCC998B84 /* Pods-Distribution-Data-Persistence-AppTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D82FAC0EE86EAB3CEFA10A76F27B536A /* TextFieldEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16491396803FFF9A7F9EFDD0989074D5 /* TextFieldEffects.swift */; };
+		E61C827911A0CE4DCE3748EB943040E7 /* MinoruTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CED407A6BEA3137C79FCEDFB514911 /* MinoruTextField.swift */; };
+		E7B9C14FAB492C840932375813D9F583 /* TextFieldEffects-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5E219C886DCCF2601B2C6822D3DDDF /* TextFieldEffects-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2F5F48CB4EB616DAB5569D4480881B68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4EDA4981EE46784EC944141DD57E8D34;
+			remoteInfo = TextFieldEffects;
+		};
+		B59C1CC08C951DBF0E6B4E59547B176E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B61CBCC67F9C321AAFDEBEEA1E5EE485;
+			remoteInfo = Popover;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02FE7C65473469293727965FCC998B84 /* Pods-Distribution-Data-Persistence-AppTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Distribution-Data-Persistence-AppTests-umbrella.h"; sourceTree = "<group>"; };
+		080A2954F4F95276B67F627AB07D39ED /* Pods_Distribution_Data_Persistence_AppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Distribution_Data_Persistence_AppUITests.framework; path = "Pods-Distribution-Data-Persistence-AppUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		12D224EBD44C6103D4350680A3E98588 /* Pods-Distribution-Data-Persistence-AppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Distribution-Data-Persistence-AppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		16491396803FFF9A7F9EFDD0989074D5 /* TextFieldEffects.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextFieldEffects.swift; path = TextFieldEffects/TextFieldEffects/TextFieldEffects.swift; sourceTree = "<group>"; };
+		1793C694DCAA733FA20AD397D9711532 /* Pods-Distribution-Data-Persistence-AppUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Distribution-Data-Persistence-AppUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		17C5A0FB57CA74D0A13E3A270BEE99BF /* Pods-Distribution-Data-Persistence-App.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Distribution-Data-Persistence-App.modulemap"; sourceTree = "<group>"; };
+		1A5C2E67FDE1F75BF903A1E7849B0BCB /* YokoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YokoTextField.swift; path = TextFieldEffects/TextFieldEffects/YokoTextField.swift; sourceTree = "<group>"; };
+		2A6A6A37FF2E40E9095A928CD6AACB16 /* JiroTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JiroTextField.swift; path = TextFieldEffects/TextFieldEffects/JiroTextField.swift; sourceTree = "<group>"; };
+		2F408C5F435114F0B7B0ABD3A61B1018 /* Pods-Distribution-Data-Persistence-AppUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Distribution-Data-Persistence-AppUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		365DBD07B555176B42B16113D26BC520 /* Popover-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Popover-umbrella.h"; sourceTree = "<group>"; };
+		3AA87FD13282635E121D2AE731B929DD /* TextFieldEffects-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TextFieldEffects-prefix.pch"; sourceTree = "<group>"; };
+		3C2367F16E68917F5629951CB87C2C70 /* Pods_Distribution_Data_Persistence_AppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Distribution_Data_Persistence_AppTests.framework; path = "Pods-Distribution-Data-Persistence-AppTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D071B95071AAD4655B09AB452730E83 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		445F98C0BC04632F32EAD99B57F2F03F /* Pods-Distribution-Data-Persistence-App-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Distribution-Data-Persistence-App-umbrella.h"; sourceTree = "<group>"; };
+		44CED407A6BEA3137C79FCEDFB514911 /* MinoruTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MinoruTextField.swift; path = TextFieldEffects/TextFieldEffects/MinoruTextField.swift; sourceTree = "<group>"; };
+		4C03F20A9A0A88519C203D7FA355DA94 /* TextFieldEffects-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TextFieldEffects-umbrella.h"; sourceTree = "<group>"; };
+		51B23ACD02CBE6B2BA658F51D0303DA5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A458F1783C349A23D7C1E1CD2B8843A /* Popover.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Popover.framework; path = Popover.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6A930EEE7BDB833B5C92320C9EF1EC09 /* Pods-Distribution-Data-Persistence-AppUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Distribution-Data-Persistence-AppUITests-frameworks.sh"; sourceTree = "<group>"; };
+		718E6DD2BF8C345961C480F8C3CE0A11 /* TextFieldEffects.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = TextFieldEffects.modulemap; sourceTree = "<group>"; };
+		72431AE431425C5CAE255F7A7AC3C62D /* TextFieldEffects.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TextFieldEffects.framework; path = TextFieldEffects.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		752ABEA6CACA1F8E878326E823C83BE6 /* Pods-Distribution-Data-Persistence-App-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Distribution-Data-Persistence-App-resources.sh"; sourceTree = "<group>"; };
+		7607D3C5E5A76FECE186B9F932629F0E /* Pods-Distribution-Data-Persistence-AppTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Distribution-Data-Persistence-AppTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		7C02F346A88455C59FCDADC142401773 /* YoshikoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YoshikoTextField.swift; path = TextFieldEffects/TextFieldEffects/YoshikoTextField.swift; sourceTree = "<group>"; };
+		87DF5A96B7C2041FA77662CB836C3E1E /* Popover-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Popover-prefix.pch"; sourceTree = "<group>"; };
+		89C113C83507F3AE597F16511746FC97 /* Pods-Distribution-Data-Persistence-AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Distribution-Data-Persistence-AppTests.release.xcconfig"; sourceTree = "<group>"; };
+		8C6F066C472125C0377CF7E586FEACCF /* Popover.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Popover.modulemap; sourceTree = "<group>"; };
+		91A13A62FEF0F131ADB7E40C6FA802A0 /* Pods-Distribution-Data-Persistence-AppUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Distribution-Data-Persistence-AppUITests-resources.sh"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9676DF74884109F05D1E5099D150FCBB /* Pods-Distribution-Data-Persistence-App-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Distribution-Data-Persistence-App-dummy.m"; sourceTree = "<group>"; };
+		978D5B528178287BCD553E76C7B3CAA6 /* Pods-Distribution-Data-Persistence-App-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Distribution-Data-Persistence-App-acknowledgements.markdown"; sourceTree = "<group>"; };
+		99DEEA748592483C4736BEE2F8E890E7 /* IsaoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IsaoTextField.swift; path = TextFieldEffects/TextFieldEffects/IsaoTextField.swift; sourceTree = "<group>"; };
+		9B915AC1D76E444F719988366EADF873 /* Pods-Distribution-Data-Persistence-AppTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Distribution-Data-Persistence-AppTests-frameworks.sh"; sourceTree = "<group>"; };
+		9D9E99358B9716E1DE8629D1A84F33C3 /* Pods-Distribution-Data-Persistence-App-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Distribution-Data-Persistence-App-frameworks.sh"; sourceTree = "<group>"; };
+		A7DE48C471015FE8637D06D7AAB4EC56 /* HoshiTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HoshiTextField.swift; path = TextFieldEffects/TextFieldEffects/HoshiTextField.swift; sourceTree = "<group>"; };
+		AEB97803542DDF615BFB31D7B0680BA4 /* TextFieldEffects.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TextFieldEffects.xcconfig; sourceTree = "<group>"; };
+		AEC15FC2FA14F8C8D8B3E75F3E5EDD2B /* KaedeTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KaedeTextField.swift; path = TextFieldEffects/TextFieldEffects/KaedeTextField.swift; sourceTree = "<group>"; };
+		B89096BD7B62967032ACA7CE6FBC585D /* Pods-Distribution-Data-Persistence-AppTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Distribution-Data-Persistence-AppTests.modulemap"; sourceTree = "<group>"; };
+		B8C9CA4FEDDB776877C821234E60262B /* Popover-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Popover-dummy.m"; sourceTree = "<group>"; };
+		BEF8B6FB104321CCED0756B9AD1D8805 /* AkiraTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AkiraTextField.swift; path = TextFieldEffects/TextFieldEffects/AkiraTextField.swift; sourceTree = "<group>"; };
+		C0D3C8A2BE1D16EE0D9A1F0221CCC24E /* Pods-Distribution-Data-Persistence-AppUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Distribution-Data-Persistence-AppUITests.modulemap"; sourceTree = "<group>"; };
+		C0EF7841410FA76A9D71B55DFEE606BA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C185F68979E5574CE3ADECA993E447D3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5B20DA0884EB6D1CF31DA8DF62B5648 /* Pods-Distribution-Data-Persistence-App-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Distribution-Data-Persistence-App-acknowledgements.plist"; sourceTree = "<group>"; };
+		C815DA142397CF8F681B889AE84690E2 /* Pods-Distribution-Data-Persistence-AppUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Distribution-Data-Persistence-AppUITests-umbrella.h"; sourceTree = "<group>"; };
+		C8750E03AA11CEF4170077A29F4F1607 /* Pods_Distribution_Data_Persistence_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Distribution_Data_Persistence_App.framework; path = "Pods-Distribution-Data-Persistence-App.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C92329640D81FDF5962994D2E12816F2 /* Popover.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Popover.swift; path = Classes/Popover.swift; sourceTree = "<group>"; };
+		CE99CE97AC8754BA7F49223EBC78A898 /* Pods-Distribution-Data-Persistence-AppTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Distribution-Data-Persistence-AppTests-dummy.m"; sourceTree = "<group>"; };
+		CFD713A661521A8277D1F93A558FDAE1 /* Popover.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Popover.xcconfig; sourceTree = "<group>"; };
+		CFEE94778E330F04393CDB5701E602CA /* Pods-Distribution-Data-Persistence-AppTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Distribution-Data-Persistence-AppTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D493BA360BB4D41E8AA8A54D5F5AAF09 /* Pods-Distribution-Data-Persistence-AppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Distribution-Data-Persistence-AppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DB5E219C886DCCF2601B2C6822D3DDDF /* TextFieldEffects-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TextFieldEffects-dummy.m"; sourceTree = "<group>"; };
+		DCEADAB59388519B503A3246884B1141 /* Pods-Distribution-Data-Persistence-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Distribution-Data-Persistence-App.release.xcconfig"; sourceTree = "<group>"; };
+		DE4AA1ABCF31C0EB0E6E0D5F48AFE58D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E294447AB6D4C1422B36CA11A0F1DF02 /* Pods-Distribution-Data-Persistence-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Distribution-Data-Persistence-App.debug.xcconfig"; sourceTree = "<group>"; };
+		E72E26C0729D02B279C4697E988AFE93 /* Pods-Distribution-Data-Persistence-AppUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Distribution-Data-Persistence-AppUITests-dummy.m"; sourceTree = "<group>"; };
+		EACE6326E636178B90C2FCDE535459C3 /* Pods-Distribution-Data-Persistence-AppTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Distribution-Data-Persistence-AppTests-resources.sh"; sourceTree = "<group>"; };
+		F75FEF55A536114681C8201EDCE1832F /* Pods-Distribution-Data-Persistence-AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Distribution-Data-Persistence-AppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F88710D9DDD6A8FD01E3A13D7B4894F5 /* MadokaTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MadokaTextField.swift; path = TextFieldEffects/TextFieldEffects/MadokaTextField.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		475B034E141496AA3AE0277E6F453439 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AF1FD1E1BC9905F464EE38B623D28C4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4ABCBD8F1BF6A050596E08DE419EEFEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C46F27703B946F897E318C168547A816 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4367195EE88E02FE82A4838C43301A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7998BAF5AF2141F3BD16F99E32FFCE64 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D60CB95BF29DA022822FE11CD1EE7624 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55764E7C61FCF7D458C1769B056B5235 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E55C9B6098638B2B4E2F29F5D1B4BB6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52CFCA00EDD5BF8C3C06638E3BCD27E4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		027341D99C7B19455670B00B81CD3836 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				360E3CC65B1623C25D1F0773934F2A02 /* Popover */,
+				8B7AD07C2CF1D147A5C1FEE7049662F0 /* TextFieldEffects */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		20A115E21955CEE30C8B5A1D8722A2AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C8750E03AA11CEF4170077A29F4F1607 /* Pods_Distribution_Data_Persistence_App.framework */,
+				3C2367F16E68917F5629951CB87C2C70 /* Pods_Distribution_Data_Persistence_AppTests.framework */,
+				080A2954F4F95276B67F627AB07D39ED /* Pods_Distribution_Data_Persistence_AppUITests.framework */,
+				5A458F1783C349A23D7C1E1CD2B8843A /* Popover.framework */,
+				72431AE431425C5CAE255F7A7AC3C62D /* TextFieldEffects.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2A22DC7CF67184A32100974D2C2E1849 /* Pods-Distribution-Data-Persistence-AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				3D071B95071AAD4655B09AB452730E83 /* Info.plist */,
+				B89096BD7B62967032ACA7CE6FBC585D /* Pods-Distribution-Data-Persistence-AppTests.modulemap */,
+				CFEE94778E330F04393CDB5701E602CA /* Pods-Distribution-Data-Persistence-AppTests-acknowledgements.markdown */,
+				7607D3C5E5A76FECE186B9F932629F0E /* Pods-Distribution-Data-Persistence-AppTests-acknowledgements.plist */,
+				CE99CE97AC8754BA7F49223EBC78A898 /* Pods-Distribution-Data-Persistence-AppTests-dummy.m */,
+				9B915AC1D76E444F719988366EADF873 /* Pods-Distribution-Data-Persistence-AppTests-frameworks.sh */,
+				EACE6326E636178B90C2FCDE535459C3 /* Pods-Distribution-Data-Persistence-AppTests-resources.sh */,
+				02FE7C65473469293727965FCC998B84 /* Pods-Distribution-Data-Persistence-AppTests-umbrella.h */,
+				F75FEF55A536114681C8201EDCE1832F /* Pods-Distribution-Data-Persistence-AppTests.debug.xcconfig */,
+				89C113C83507F3AE597F16511746FC97 /* Pods-Distribution-Data-Persistence-AppTests.release.xcconfig */,
+			);
+			name = "Pods-Distribution-Data-Persistence-AppTests";
+			path = "Target Support Files/Pods-Distribution-Data-Persistence-AppTests";
+			sourceTree = "<group>";
+		};
+		360E3CC65B1623C25D1F0773934F2A02 /* Popover */ = {
+			isa = PBXGroup;
+			children = (
+				C92329640D81FDF5962994D2E12816F2 /* Popover.swift */,
+				C1A2B6AFE3AF6E0CA3770C383A25FA92 /* Support Files */,
+			);
+			name = Popover;
+			path = Popover;
+			sourceTree = "<group>";
+		};
+		3761B33B9A3438E94537DF65DD914F53 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5450905711ED6592E435446EAC64F525 /* Pods-Distribution-Data-Persistence-App */,
+				2A22DC7CF67184A32100974D2C2E1849 /* Pods-Distribution-Data-Persistence-AppTests */,
+				53035DCEA0AB8A2CD81A6AFFB762C802 /* Pods-Distribution-Data-Persistence-AppUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		3C8855E9AA0FE200D13A1543986717B4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C0EF7841410FA76A9D71B55DFEE606BA /* Info.plist */,
+				718E6DD2BF8C345961C480F8C3CE0A11 /* TextFieldEffects.modulemap */,
+				AEB97803542DDF615BFB31D7B0680BA4 /* TextFieldEffects.xcconfig */,
+				DB5E219C886DCCF2601B2C6822D3DDDF /* TextFieldEffects-dummy.m */,
+				3AA87FD13282635E121D2AE731B929DD /* TextFieldEffects-prefix.pch */,
+				4C03F20A9A0A88519C203D7FA355DA94 /* TextFieldEffects-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TextFieldEffects";
+			sourceTree = "<group>";
+		};
+		53035DCEA0AB8A2CD81A6AFFB762C802 /* Pods-Distribution-Data-Persistence-AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DE4AA1ABCF31C0EB0E6E0D5F48AFE58D /* Info.plist */,
+				C0D3C8A2BE1D16EE0D9A1F0221CCC24E /* Pods-Distribution-Data-Persistence-AppUITests.modulemap */,
+				1793C694DCAA733FA20AD397D9711532 /* Pods-Distribution-Data-Persistence-AppUITests-acknowledgements.markdown */,
+				2F408C5F435114F0B7B0ABD3A61B1018 /* Pods-Distribution-Data-Persistence-AppUITests-acknowledgements.plist */,
+				E72E26C0729D02B279C4697E988AFE93 /* Pods-Distribution-Data-Persistence-AppUITests-dummy.m */,
+				6A930EEE7BDB833B5C92320C9EF1EC09 /* Pods-Distribution-Data-Persistence-AppUITests-frameworks.sh */,
+				91A13A62FEF0F131ADB7E40C6FA802A0 /* Pods-Distribution-Data-Persistence-AppUITests-resources.sh */,
+				C815DA142397CF8F681B889AE84690E2 /* Pods-Distribution-Data-Persistence-AppUITests-umbrella.h */,
+				D493BA360BB4D41E8AA8A54D5F5AAF09 /* Pods-Distribution-Data-Persistence-AppUITests.debug.xcconfig */,
+				12D224EBD44C6103D4350680A3E98588 /* Pods-Distribution-Data-Persistence-AppUITests.release.xcconfig */,
+			);
+			name = "Pods-Distribution-Data-Persistence-AppUITests";
+			path = "Target Support Files/Pods-Distribution-Data-Persistence-AppUITests";
+			sourceTree = "<group>";
+		};
+		5450905711ED6592E435446EAC64F525 /* Pods-Distribution-Data-Persistence-App */ = {
+			isa = PBXGroup;
+			children = (
+				51B23ACD02CBE6B2BA658F51D0303DA5 /* Info.plist */,
+				17C5A0FB57CA74D0A13E3A270BEE99BF /* Pods-Distribution-Data-Persistence-App.modulemap */,
+				978D5B528178287BCD553E76C7B3CAA6 /* Pods-Distribution-Data-Persistence-App-acknowledgements.markdown */,
+				C5B20DA0884EB6D1CF31DA8DF62B5648 /* Pods-Distribution-Data-Persistence-App-acknowledgements.plist */,
+				9676DF74884109F05D1E5099D150FCBB /* Pods-Distribution-Data-Persistence-App-dummy.m */,
+				9D9E99358B9716E1DE8629D1A84F33C3 /* Pods-Distribution-Data-Persistence-App-frameworks.sh */,
+				752ABEA6CACA1F8E878326E823C83BE6 /* Pods-Distribution-Data-Persistence-App-resources.sh */,
+				445F98C0BC04632F32EAD99B57F2F03F /* Pods-Distribution-Data-Persistence-App-umbrella.h */,
+				E294447AB6D4C1422B36CA11A0F1DF02 /* Pods-Distribution-Data-Persistence-App.debug.xcconfig */,
+				DCEADAB59388519B503A3246884B1141 /* Pods-Distribution-Data-Persistence-App.release.xcconfig */,
+			);
+			name = "Pods-Distribution-Data-Persistence-App";
+			path = "Target Support Files/Pods-Distribution-Data-Persistence-App";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				027341D99C7B19455670B00B81CD3836 /* Pods */,
+				20A115E21955CEE30C8B5A1D8722A2AF /* Products */,
+				3761B33B9A3438E94537DF65DD914F53 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8B7AD07C2CF1D147A5C1FEE7049662F0 /* TextFieldEffects */ = {
+			isa = PBXGroup;
+			children = (
+				BEF8B6FB104321CCED0756B9AD1D8805 /* AkiraTextField.swift */,
+				A7DE48C471015FE8637D06D7AAB4EC56 /* HoshiTextField.swift */,
+				99DEEA748592483C4736BEE2F8E890E7 /* IsaoTextField.swift */,
+				2A6A6A37FF2E40E9095A928CD6AACB16 /* JiroTextField.swift */,
+				AEC15FC2FA14F8C8D8B3E75F3E5EDD2B /* KaedeTextField.swift */,
+				F88710D9DDD6A8FD01E3A13D7B4894F5 /* MadokaTextField.swift */,
+				44CED407A6BEA3137C79FCEDFB514911 /* MinoruTextField.swift */,
+				16491396803FFF9A7F9EFDD0989074D5 /* TextFieldEffects.swift */,
+				1A5C2E67FDE1F75BF903A1E7849B0BCB /* YokoTextField.swift */,
+				7C02F346A88455C59FCDADC142401773 /* YoshikoTextField.swift */,
+				3C8855E9AA0FE200D13A1543986717B4 /* Support Files */,
+			);
+			name = TextFieldEffects;
+			path = TextFieldEffects;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C1A2B6AFE3AF6E0CA3770C383A25FA92 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C185F68979E5574CE3ADECA993E447D3 /* Info.plist */,
+				8C6F066C472125C0377CF7E586FEACCF /* Popover.modulemap */,
+				CFD713A661521A8277D1F93A558FDAE1 /* Popover.xcconfig */,
+				B8C9CA4FEDDB776877C821234E60262B /* Popover-dummy.m */,
+				87DF5A96B7C2041FA77662CB836C3E1E /* Popover-prefix.pch */,
+				365DBD07B555176B42B16113D26BC520 /* Popover-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Popover";
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		05EE739F9B7318274B70B454560F72CD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C61B9BFB769EE6059E1368466DD2F919 /* Pods-Distribution-Data-Persistence-AppTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1840DAFAF2CAA3A91B2BCD1E99277FBE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB3BA940ECDA9ED6AE5C9B685AF2CBA7 /* TextFieldEffects-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6252D733F82EB98EEAD4222F9482CCEB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E3ADCB1391900DF0741E677789D5FF1 /* Pods-Distribution-Data-Persistence-App-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B119E610A9C0F9D30798BF5E843DFA17 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75B913F250CA8D51CC01E3D946515B3A /* Popover-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7C3388FE557FEFEACE498C0DF2FBE57 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7652730A2546A840FAAE74FB7003A6D /* Pods-Distribution-Data-Persistence-AppUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		400E41A5929239D9617326581A04C8A5 /* Pods-Distribution-Data-Persistence-AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B3A4598A91B8AC2694788AD8A1B6557 /* Build configuration list for PBXNativeTarget "Pods-Distribution-Data-Persistence-AppUITests" */;
+			buildPhases = (
+				9BFE9023D365C1787F50DF67D4133960 /* Sources */,
+				4ABCBD8F1BF6A050596E08DE419EEFEA /* Frameworks */,
+				C7C3388FE557FEFEACE498C0DF2FBE57 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Distribution-Data-Persistence-AppUITests";
+			productName = "Pods-Distribution-Data-Persistence-AppUITests";
+			productReference = 080A2954F4F95276B67F627AB07D39ED /* Pods_Distribution_Data_Persistence_AppUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4EDA4981EE46784EC944141DD57E8D34 /* TextFieldEffects */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 242C968C26178E37C9D8EFB74D3DE106 /* Build configuration list for PBXNativeTarget "TextFieldEffects" */;
+			buildPhases = (
+				322BBA8A717DB40051C4A9CBDCA69E5E /* Sources */,
+				D4367195EE88E02FE82A4838C43301A8 /* Frameworks */,
+				1840DAFAF2CAA3A91B2BCD1E99277FBE /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TextFieldEffects;
+			productName = TextFieldEffects;
+			productReference = 72431AE431425C5CAE255F7A7AC3C62D /* TextFieldEffects.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		550DAC45B2F873A53DBFED2C75851D9F /* Pods-Distribution-Data-Persistence-AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C716D498920ED40BBA1AA1A35B468449 /* Build configuration list for PBXNativeTarget "Pods-Distribution-Data-Persistence-AppTests" */;
+			buildPhases = (
+				FE9B6074419848C8C8D490C7368FA809 /* Sources */,
+				D60CB95BF29DA022822FE11CD1EE7624 /* Frameworks */,
+				05EE739F9B7318274B70B454560F72CD /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Distribution-Data-Persistence-AppTests";
+			productName = "Pods-Distribution-Data-Persistence-AppTests";
+			productReference = 3C2367F16E68917F5629951CB87C2C70 /* Pods_Distribution_Data_Persistence_AppTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B61CBCC67F9C321AAFDEBEEA1E5EE485 /* Popover */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B59B0BD1911D0EB3D308EF6F32963B2 /* Build configuration list for PBXNativeTarget "Popover" */;
+			buildPhases = (
+				136364C31C20804C9D21B3042768E04A /* Sources */,
+				475B034E141496AA3AE0277E6F453439 /* Frameworks */,
+				B119E610A9C0F9D30798BF5E843DFA17 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Popover;
+			productName = Popover;
+			productReference = 5A458F1783C349A23D7C1E1CD2B8843A /* Popover.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E91013CFA4D1061BD5A30BF95BB89B91 /* Pods-Distribution-Data-Persistence-App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C97AE9B3C13930125C4F9710B2B9C89 /* Build configuration list for PBXNativeTarget "Pods-Distribution-Data-Persistence-App" */;
+			buildPhases = (
+				1DDDB89A00510D051818016AAD80B5FF /* Sources */,
+				E55C9B6098638B2B4E2F29F5D1B4BB6E /* Frameworks */,
+				6252D733F82EB98EEAD4222F9482CCEB /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D48E6D6B94313380264DD7C0E3B65E32 /* PBXTargetDependency */,
+				F83B501C68F1036DE41081B19CC74606 /* PBXTargetDependency */,
+			);
+			name = "Pods-Distribution-Data-Persistence-App";
+			productName = "Pods-Distribution-Data-Persistence-App";
+			productReference = C8750E03AA11CEF4170077A29F4F1607 /* Pods_Distribution_Data_Persistence_App.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 20A115E21955CEE30C8B5A1D8722A2AF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E91013CFA4D1061BD5A30BF95BB89B91 /* Pods-Distribution-Data-Persistence-App */,
+				550DAC45B2F873A53DBFED2C75851D9F /* Pods-Distribution-Data-Persistence-AppTests */,
+				400E41A5929239D9617326581A04C8A5 /* Pods-Distribution-Data-Persistence-AppUITests */,
+				B61CBCC67F9C321AAFDEBEEA1E5EE485 /* Popover */,
+				4EDA4981EE46784EC944141DD57E8D34 /* TextFieldEffects */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		136364C31C20804C9D21B3042768E04A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36804D478F341AF922F0524C45764506 /* Popover-dummy.m in Sources */,
+				68F2415C0AE2330AE2031D28305B3A3A /* Popover.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DDDB89A00510D051818016AAD80B5FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C165B0494D547517BEE4EB8E50B934B7 /* Pods-Distribution-Data-Persistence-App-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		322BBA8A717DB40051C4A9CBDCA69E5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0545AC9272E8418E5DFE5523C2781BC5 /* AkiraTextField.swift in Sources */,
+				10512357D4E5DC29C9285A06476650DB /* HoshiTextField.swift in Sources */,
+				8646F7FBBE16FC56161D82A1BCFE41C8 /* IsaoTextField.swift in Sources */,
+				92AA585FD4B03CFBA0D3ED1EED78CDEC /* JiroTextField.swift in Sources */,
+				67D55B1B076162B0D32C7936960AB5F0 /* KaedeTextField.swift in Sources */,
+				32C72C084A0E74D87F3CF83CA9BC6223 /* MadokaTextField.swift in Sources */,
+				E61C827911A0CE4DCE3748EB943040E7 /* MinoruTextField.swift in Sources */,
+				E7B9C14FAB492C840932375813D9F583 /* TextFieldEffects-dummy.m in Sources */,
+				D82FAC0EE86EAB3CEFA10A76F27B536A /* TextFieldEffects.swift in Sources */,
+				4D6BD608864A213B2598BB7300A0D413 /* YokoTextField.swift in Sources */,
+				1F860238AC6774CFAF7E5176023AFE36 /* YoshikoTextField.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BFE9023D365C1787F50DF67D4133960 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3727A57CF0D78A4CD9B07EF6ADA49371 /* Pods-Distribution-Data-Persistence-AppUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE9B6074419848C8C8D490C7368FA809 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F92E53B15DC31966F97C2257DED7C98 /* Pods-Distribution-Data-Persistence-AppTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D48E6D6B94313380264DD7C0E3B65E32 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Popover;
+			target = B61CBCC67F9C321AAFDEBEEA1E5EE485 /* Popover */;
+			targetProxy = B59C1CC08C951DBF0E6B4E59547B176E /* PBXContainerItemProxy */;
+		};
+		F83B501C68F1036DE41081B19CC74606 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TextFieldEffects;
+			target = 4EDA4981EE46784EC944141DD57E8D34 /* TextFieldEffects */;
+			targetProxy = 2F5F48CB4EB616DAB5569D4480881B68 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0AEDDCD58B92C70847AE5476D38766BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AEB97803542DDF615BFB31D7B0680BA4 /* TextFieldEffects.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TextFieldEffects/TextFieldEffects-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TextFieldEffects/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TextFieldEffects/TextFieldEffects.modulemap";
+				PRODUCT_NAME = TextFieldEffects;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0CC763403D3E80A8D1C84738E07F9CC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFD713A661521A8277D1F93A558FDAE1 /* Popover.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Popover/Popover-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Popover/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Popover/Popover.modulemap";
+				PRODUCT_NAME = Popover;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		12C4B864767C59600DBFA238F1E2F8BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		2A84BD625BD8D2AC05F4A12154AFD596 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E294447AB6D4C1422B36CA11A0F1DF02 /* Pods-Distribution-Data-Persistence-App.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Distribution-Data-Persistence-App/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Distribution-Data-Persistence-App/Pods-Distribution-Data-Persistence-App.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Distribution_Data_Persistence_App;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4E12F3FA3BB8F7C7B4326C72132E4E2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F75FEF55A536114681C8201EDCE1832F /* Pods-Distribution-Data-Persistence-AppTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Distribution-Data-Persistence-AppTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Distribution-Data-Persistence-AppTests/Pods-Distribution-Data-Persistence-AppTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Distribution_Data_Persistence_AppTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		59F0302F2371FCC6B73EF0A418D40734 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		7455AEFB31AFB7B37E9795F91E104DE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12D224EBD44C6103D4350680A3E98588 /* Pods-Distribution-Data-Persistence-AppUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Distribution-Data-Persistence-AppUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Distribution-Data-Persistence-AppUITests/Pods-Distribution-Data-Persistence-AppUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Distribution_Data_Persistence_AppUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8AF7A6F262FEB3E9A14B8AC088BD0362 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFD713A661521A8277D1F93A558FDAE1 /* Popover.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Popover/Popover-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Popover/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Popover/Popover.modulemap";
+				PRODUCT_NAME = Popover;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A4C10D0FAF42A6D6D8757103F494967D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCEADAB59388519B503A3246884B1141 /* Pods-Distribution-Data-Persistence-App.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Distribution-Data-Persistence-App/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Distribution-Data-Persistence-App/Pods-Distribution-Data-Persistence-App.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Distribution_Data_Persistence_App;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E2DE9B1BFDCED8BDC779522109AC9509 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D493BA360BB4D41E8AA8A54D5F5AAF09 /* Pods-Distribution-Data-Persistence-AppUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Distribution-Data-Persistence-AppUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Distribution-Data-Persistence-AppUITests/Pods-Distribution-Data-Persistence-AppUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Distribution_Data_Persistence_AppUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F2C19BB2F724261DF540B0F3759FFE35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89C113C83507F3AE597F16511746FC97 /* Pods-Distribution-Data-Persistence-AppTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Distribution-Data-Persistence-AppTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Distribution-Data-Persistence-AppTests/Pods-Distribution-Data-Persistence-AppTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Distribution_Data_Persistence_AppTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FAC48D5B727F6B99F38905C4F802E767 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AEB97803542DDF615BFB31D7B0680BA4 /* TextFieldEffects.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TextFieldEffects/TextFieldEffects-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TextFieldEffects/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TextFieldEffects/TextFieldEffects.modulemap";
+				PRODUCT_NAME = TextFieldEffects;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0C97AE9B3C13930125C4F9710B2B9C89 /* Build configuration list for PBXNativeTarget "Pods-Distribution-Data-Persistence-App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A84BD625BD8D2AC05F4A12154AFD596 /* Debug */,
+				A4C10D0FAF42A6D6D8757103F494967D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		242C968C26178E37C9D8EFB74D3DE106 /* Build configuration list for PBXNativeTarget "TextFieldEffects" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAC48D5B727F6B99F38905C4F802E767 /* Debug */,
+				0AEDDCD58B92C70847AE5476D38766BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59F0302F2371FCC6B73EF0A418D40734 /* Debug */,
+				12C4B864767C59600DBFA238F1E2F8BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B3A4598A91B8AC2694788AD8A1B6557 /* Build configuration list for PBXNativeTarget "Pods-Distribution-Data-Persistence-AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2DE9B1BFDCED8BDC779522109AC9509 /* Debug */,
+				7455AEFB31AFB7B37E9795F91E104DE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B59B0BD1911D0EB3D308EF6F32963B2 /* Build configuration list for PBXNativeTarget "Popover" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CC763403D3E80A8D1C84738E07F9CC8 /* Debug */,
+				8AF7A6F262FEB3E9A14B8AC088BD0362 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C716D498920ED40BBA1AA1A35B468449 /* Build configuration list for PBXNativeTarget "Pods-Distribution-Data-Persistence-AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E12F3FA3BB8F7C7B4326C72132E4E2E /* Debug */,
+				F2C19BB2F724261DF540B0F3759FFE35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
