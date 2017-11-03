@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/MegKing/git/Distribution-Data-Persistence-App/Distribution-Data-Persistence-App/Person+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/MegKing/git/Distribution-Data-Persistence-App/Distribution-Data-Persistence-App/Person+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
       location = "group:Distribution-Data-Persistence-App.xcodeproj">
    </FileRef>
    <FileRef
