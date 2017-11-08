@@ -69,7 +69,7 @@ class ViewController: UIViewController {
     }
     
     //function to open list of devices (names) that ave been added (local data)
-    @IBAction func openDeviceList(_ sender: Any) {
+    func openDeviceList(_ sender: Any) {
         var tableView = UITableView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height - 100))
         
         if((Double)(self.people.endIndex * 45) < Double(self.view.frame.height) - 100){
@@ -131,9 +131,39 @@ class ViewController: UIViewController {
             } else {
                 d = self.saveName(nameField.text!)
                 
-                //TO-DO:
+                /////////////////////////////////////////
                 // save the device name and info to the database
+                let urlstr : String =
+                    "http://cmilne2.w3.uvm.edu/cs148_develop/labs/appClassBackend/findDevice.php?deviceName="
+                        + nameField.text!
+                        + "&serialNumber="
+                        + serNumField.text!
+                        + "&deviceMFA="
+                        + MFAField.text!
                 
+                guard let url = URL(string: urlstr) else {
+                    print("Error: cannot create URL")
+                    return
+                }
+                
+                let urlRequest = URLRequest(url: url)
+                let task = URLSession.shared.dataTask(with: urlRequest, completionHandler: {
+                    (data, response, error) in
+                    if( error == nil){
+                        DispatchQueue.main.async{
+                            self.nameField.text = "posted"
+                            self.MFAField.text = "posted"
+                            self.serNumField.text = "posted"
+                        }
+                    }
+                    else {
+                        print("error calling POST")
+                        print(error)
+                        return
+                    }
+                    
+                })
+                //////////////////////////////////////////
                 
                 //Tell user device has been added
                 let alert = UIAlertController(title: name! + " sucessfully added",
@@ -158,10 +188,13 @@ class ViewController: UIViewController {
         }
     }
     
+    //TODO: use this code to pull data when user selects a device
     //get from DB
-    @IBAction func getRefresh(_ sender: AnyObject) {
+    //view sample return at http://cmilne2.w3.uvm.edu/cs148_develop/labs/appClassBackend/findDevice.php?serialNumber=123456
+    func getRefresh(_ sender: AnyObject) {
         
-        let urlstr : String = "http://www.uvm.edu/~ifoertsc/Restful/example.php?serialNumber=" + serNumField.text!
+        //uses serNumField as the current argument
+        let urlstr : String = "http://cmilne2.w3.uvm.edu/cs148_develop/labs/appClassBackend/findDevice.php?serialNumber=" + serNumField.text!
         
         guard let url = URL(string: urlstr) else {
             print("Error: cannot create URL")
@@ -183,15 +216,17 @@ class ViewController: UIViewController {
                     return
                 }
                 
-                if let nameField = jo["fldDeviceName"]{
+                //sets nameField
+                if let nameField = jo["deviceName"]{
                     DispatchQueue.main.async{
-                        self.nameField.text = String(describing: name)
+                        self.nameField.text = String(describing: nameField)
                     }
                 }
                 
-                if let MFAField = jo["fldMFA"]{
+                //sets MFAField
+                if let MFAField = jo["deviceMFA"]{
                     DispatchQueue.main.async{
-                        self.MFAField.text = String(describing: mfa)
+                        self.MFAField.text = String(describing: MFAField)
                     }
                 }
             }
@@ -200,47 +235,6 @@ class ViewController: UIViewController {
                 print(error as Any);
             }})
         task.resume()
-        
-    }
-    
-    //post to DB
-    @IBAction func postRefresh(_ sender: AnyObject) {
-        
-        // playing fast and loose here, in practice should check non-emptiness of
-        // text fields, and possibly validate other expected properties of text.
-        let urlstr : String =
-            "http://www.uvm.edu/~ifoertsc/Restful/example.php?fldDeviceName="
-                + nameField.text!
-                + "&fldMFA="
-                + MFAField.text!
-                + "&fldSerialNumber="
-                + serNumField.text!
-        
-        guard let url = URL(string: urlstr) else {
-            print("Error: cannot create URL")
-            return
-        }
-        
-        var urlRequest = URLRequest(url: url)  // must be mutable to set the http method
-        urlRequest.httpMethod = "POST";
-        let task = URLSession.shared.dataTask(with: urlRequest, completionHandler: {
-            (data, response, error) in
-            if( error == nil){
-                DispatchQueue.main.async{
-                    self.nameField.text = "posted"
-                    self.MFAField.text = "posted"
-                    self.serNumField = "posted"
-                }
-            }
-            else {
-                print("error calling POST")
-                print(error)
-                return
-            }
-            
-        })
-        task.resume();
-        
         
     }
     
