@@ -37,12 +37,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" smartDashesType="yes"/>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="inactiveColor">
-                                        <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="activeColor">
-                                        <color key="value" red="0.15311145749999999" green="0.45366751640000003" blue="0.9758541127" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="formatJump" value="YES"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
                                         <integer key="value" value="10"/>
@@ -68,7 +62,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Device List"/>
                                 <connections>
-                                    <action selector="openDeviceList:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m2s-YK-qxD"/>
+                                    <action selector="openDeviceList:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ewc-B5-G4O"/>
                                 </connections>
                             </button>
                         </subviews>

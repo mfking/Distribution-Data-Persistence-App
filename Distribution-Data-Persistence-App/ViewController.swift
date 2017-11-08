@@ -30,7 +30,6 @@ class ViewController: UIViewController {
     @objc var displayStrings = [String]()
     
     //Device List popover variables
-    fileprivate var devices = ["Change Name", "Refresh", "Delete Device", "Meghan", "King", "Test", "Test", "Test", "Test", "Test", "Test", "Test", "Test", "Test", "Test", "Test", "Test", "Test", "Test", "Test", "Test", "Test", "end"]
     fileprivate var popover: Popover!
     fileprivate var popoverOptions: [PopoverOption] = [
         .type(.down),
@@ -69,7 +68,7 @@ class ViewController: UIViewController {
     }
     
     //function to open list of devices (names) that ave been added (local data)
-    func openDeviceList(_ sender: Any) {
+    @IBAction func openDeviceList(_ sender: Any) {
         var tableView = UITableView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height - 100))
         
         if((Double)(self.people.endIndex * 45) < Double(self.view.frame.height) - 100){
@@ -283,9 +282,9 @@ extension ViewController: UITableViewDelegate {
         // add funtionality to buttons within popover
         let indexPath = tableView.indexPathForSelectedRow //optional, to get from any UIButton for example
         
-        let currentCell = tableView.cellForRow(at: indexPath!) as! UITableViewCell
+        let currentCell = tableView.cellForRow(at: indexPath!) as UITableViewCell!
         
-        selected = (currentCell.textLabel?.text!)!
+        selected = (currentCell?.textLabel?.text!)!
         
         performSegue(withIdentifier: "showDeviceInfo", sender: self)
     }
