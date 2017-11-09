@@ -73,18 +73,34 @@ class ViewController: UIViewController {
     
     //function to open list of devices (names) that ave been added (local data)
     @IBAction func openDeviceList(_ sender: Any) {
-        var tableView = UITableView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height - 100))
-        
-        if((Double)(self.people.endIndex * 45) < Double(self.view.frame.height) - 100){
-            let height = self.people.endIndex * 45
-            tableView = UITableView(frame: CGRect(x: 0, y: 0, width: Int(self.view.frame.width), height: height))
+        if(people.endIndex > 0){
+            var tableView = UITableView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height - 100))
+            
+            if((Double)(self.people.endIndex * 45) < Double(self.view.frame.height) - 100){
+                let height = self.people.endIndex * 45
+                tableView = UITableView(frame: CGRect(x: 0, y: 0, width: Int(self.view.frame.width), height: height))
+            }
+            
+            tableView.delegate = self as UITableViewDelegate
+            tableView.dataSource = self as UITableViewDataSource
+            tableView.isScrollEnabled = true
+            self.popover = Popover(options: self.popoverOptions)
+            self.popover.show(tableView, fromView: self.DeviceListButton)
+        } else {
+            let alert = UIAlertController(title: "No Devices",
+                                          message: "No devices added yet",
+                                          preferredStyle: .alert)
+            
+            let cancelAction = UIAlertAction(title: "Close",
+                                             style: .default,
+                                             handler: { (action: UIAlertAction) -> Void in })
+            
+            alert.addAction(cancelAction)
+            
+            present(alert,
+                    animated: true,
+                    completion: nil)
         }
-        
-        tableView.delegate = self as UITableViewDelegate
-        tableView.dataSource = self as UITableViewDataSource
-        tableView.isScrollEnabled = true
-        self.popover = Popover(options: self.popoverOptions)
-        self.popover.show(tableView, fromView: self.DeviceListButton)
     }
     
     //add device name to local data, and device info to database
@@ -255,6 +271,7 @@ class ViewController: UIViewController {
         nameLabel.text = ""
         serNumLabel.text = ""
         mfaLabel.text = ""
+        
         
         let appDelegate =
             UIApplication.shared.delegate as! AppDelegate
