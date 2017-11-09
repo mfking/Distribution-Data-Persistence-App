@@ -13,10 +13,7 @@ import CoreData
 import Popover
 
 let RESET = false
-var selected = "Device Name"
-var newSN = "Device Serial Number"
-var newMFA = "Device MFA"
-
+var selected = "device";
 
 
 class ViewController: UIViewController {
@@ -29,6 +26,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var MFAField: VSTextField!
     @IBOutlet weak var serNumField: VSTextField!
     
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var mfaLabel: UILabel!
+    @IBOutlet weak var serNumLabel: UILabel!
     //person for cordata
     @objc var people = [Person]()
     @objc var displayStrings = [String]()
@@ -196,10 +196,10 @@ class ViewController: UIViewController {
     //TODO: use this code to pull data when user selects a device
     //get from DB
     //view sample return at http://cmilne2.w3.uvm.edu/cs148_develop/labs/appClassBackend/findDevice.php?deviceName=device1
-    func getRefresh(_ sender: AnyObject) {
-        
+    func getRefresh(){
+        print("Refreshing!")
         //uses serNumField as the current argument
-        let urlstr : String = "https://cmilne2.w3.uvm.edu/cs148_develop/labs/appClassBackend/findDevice.php?deviceName=" + nameField.text!
+        let urlstr : String = "https://cmilne2.w3.uvm.edu/cs148_develop/labs/appClassBackend/findDevice.php?deviceName=" + selected
         
         guard let url = URL(string: urlstr) else {
             print("Error: cannot create URL")
@@ -224,14 +224,17 @@ class ViewController: UIViewController {
                 //sets serialNumberField
                 if let serialNumberField = jo["serialNumber"]{
                     DispatchQueue.main.async{
-                        self.serNumField.text = String(describing: self.serNumField)
+                        self.serNumLabel.text = String(describing: serialNumberField)
+                        //self.serNumField.text = String(describing: serialNumberField)
                     }
+                    //newSN = String(describing: serialNumberField)
                 }
                 
                 //sets MFAField
                 if let MFAField = jo["deviceMFA"]{
                     DispatchQueue.main.async{
-                        self.MFAField.text = String(describing: MFAField)
+                        self.mfaLabel.text = String(describing: MFAField)
+                        //self.MFAField.text = String(describing: MFAField)
                     }
                 }
             }
@@ -248,6 +251,10 @@ class ViewController: UIViewController {
         
         serNumField.setFormatting("####-#####", replacementChar: "#")
         MFAField.setFormatting("######", replacementChar: "#")
+        
+        nameLabel.text = ""
+        serNumLabel.text = ""
+        mfaLabel.text = ""
         
         let appDelegate =
             UIApplication.shared.delegate as! AppDelegate
@@ -291,12 +298,14 @@ extension ViewController: UITableViewDelegate {
         let currentCell = tableView.cellForRow(at: indexPath!) as UITableViewCell!
         
         selected = (currentCell?.textLabel?.text!)!
+        self.nameLabel.text = (currentCell?.textLabel?.text!)!
+        self.getRefresh()
         
         /////////////////////////
         //get info from database
         //////////////////////////
         
-        performSegue(withIdentifier: "showDeviceInfo", sender: self)
+       // performSegue(withIdentifier: "showDeviceInfo", sender: self)
     }
 }
 
