@@ -14,6 +14,10 @@ import Popover
 
 let RESET = false
 var selected = "Device Name"
+var newSN = "Device Serial Number"
+var newMFA = "Device MFA"
+
+
 
 class ViewController: UIViewController {
     
@@ -135,7 +139,7 @@ class ViewController: UIViewController {
                 
                 //build the url string with the desired data peices
                 let urlstr : String =
-                "http://cmilne2.w3.uvm.edu/cs148_develop/labs/appClassBackend/deviceAdder.php?deviceName="
+                "https://cmilne2.w3.uvm.edu/cs148_develop/labs/appClassBackend/deviceAdder.php?deviceName="
                     + name!
                     + "&serialNumber="
                     + sn!
@@ -195,7 +199,7 @@ class ViewController: UIViewController {
     func getRefresh(_ sender: AnyObject) {
         
         //uses serNumField as the current argument
-        let urlstr : String = "http://cmilne2.w3.uvm.edu/cs148_develop/labs/appClassBackend/findDevice.php?deviceName=" + nameField.text!
+        let urlstr : String = "https://cmilne2.w3.uvm.edu/cs148_develop/labs/appClassBackend/findDevice.php?deviceName=" + nameField.text!
         
         guard let url = URL(string: urlstr) else {
             print("Error: cannot create URL")
@@ -217,7 +221,7 @@ class ViewController: UIViewController {
                     return
                 }
                 
-                //sets nameField
+                //sets serialNumberField
                 if let serialNumberField = jo["serialNumber"]{
                     DispatchQueue.main.async{
                         self.serNumField.text = String(describing: self.serNumField)
@@ -235,8 +239,8 @@ class ViewController: UIViewController {
                 print("error calling GET");
                 print(error as Any);
             }})
-        task.resume()
         
+        task.resume()
     }
     
     override func viewDidLoad() {
@@ -287,6 +291,10 @@ extension ViewController: UITableViewDelegate {
         let currentCell = tableView.cellForRow(at: indexPath!) as UITableViewCell!
         
         selected = (currentCell?.textLabel?.text!)!
+        
+        /////////////////////////
+        //get info from database
+        //////////////////////////
         
         performSegue(withIdentifier: "showDeviceInfo", sender: self)
     }
