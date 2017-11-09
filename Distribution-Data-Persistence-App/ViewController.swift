@@ -132,6 +132,8 @@ class ViewController: UIViewController {
              
                /////////////////////////////////////////
                 // save the device name and info to the database
+                
+                //build the url string with the desired data peices
                 let urlstr : String =
                 "http://cmilne2.w3.uvm.edu/cs148_develop/labs/appClassBackend/deviceAdder.php?deviceName="
                     + name!
@@ -145,11 +147,14 @@ class ViewController: UIViewController {
                     return
                 }
                 
-                let urlRequest = URLRequest(url: url)
-                URLSession.shared.dataTask(with: urlRequest, completionHandler: {
+                var urlRequest = URLRequest(url: url)  // must be mutable to set the http method
+                urlRequest.httpMethod = "POST";
+                let task = URLSession.shared.dataTask(with: urlRequest, completionHandler: {
                     (data, response, error) in
                     if( error == nil){
-                        
+                        DispatchQueue.main.async{
+                            
+                        }
                     }
                     else {
                         print("error calling POST")
@@ -158,6 +163,7 @@ class ViewController: UIViewController {
                     }
                     
                 })
+                task.resume();
                 /////////////////////////////////////////
                 
                 //Tell user device has been added
