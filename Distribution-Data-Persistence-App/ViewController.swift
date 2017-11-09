@@ -129,16 +129,16 @@ class ViewController: UIViewController {
                         completion: nil)
             } else {
                 d = self.saveName(nameField.text!)
-                
-                /////////////////////////////////////////
+             
+               /////////////////////////////////////////
                 // save the device name and info to the database
                 let urlstr : String =
-                    "http://cmilne2.w3.uvm.edu/cs148_develop/labs/appClassBackend/findDevice.php?deviceName="
-                        + nameField.text!
-                        + "&serialNumber="
-                        + serNumField.text!
-                        + "&deviceMFA="
-                        + MFAField.text!
+                "http://cmilne2.w3.uvm.edu/cs148_develop/labs/appClassBackend/deviceAdder.php?deviceName="
+                    + name!
+                    + "&serialNumber="
+                    + sn!
+                    + "&deviceMFA="
+                    + mfa!
                 
                 guard let url = URL(string: urlstr) else {
                     print("Error: cannot create URL")
@@ -146,14 +146,10 @@ class ViewController: UIViewController {
                 }
                 
                 let urlRequest = URLRequest(url: url)
-                let task = URLSession.shared.dataTask(with: urlRequest, completionHandler: {
+                URLSession.shared.dataTask(with: urlRequest, completionHandler: {
                     (data, response, error) in
                     if( error == nil){
-                        DispatchQueue.main.async{
-                            self.nameField.text = "posted"
-                            self.MFAField.text = "posted"
-                            self.serNumField.text = "posted"
-                        }
+                        
                     }
                     else {
                         print("error calling POST")
@@ -162,7 +158,7 @@ class ViewController: UIViewController {
                     }
                     
                 })
-                //////////////////////////////////////////
+                /////////////////////////////////////////
                 
                 //Tell user device has been added
                 let alert = UIAlertController(title: name! + " sucessfully added",
@@ -189,11 +185,11 @@ class ViewController: UIViewController {
     
     //TODO: use this code to pull data when user selects a device
     //get from DB
-    //view sample return at http://cmilne2.w3.uvm.edu/cs148_develop/labs/appClassBackend/findDevice.php?serialNumber=123456
+    //view sample return at http://cmilne2.w3.uvm.edu/cs148_develop/labs/appClassBackend/findDevice.php?deviceName=device1
     func getRefresh(_ sender: AnyObject) {
         
         //uses serNumField as the current argument
-        let urlstr : String = "http://cmilne2.w3.uvm.edu/cs148_develop/labs/appClassBackend/findDevice.php?serialNumber=" + serNumField.text!
+        let urlstr : String = "http://cmilne2.w3.uvm.edu/cs148_develop/labs/appClassBackend/findDevice.php?deviceName=" + nameField.text!
         
         guard let url = URL(string: urlstr) else {
             print("Error: cannot create URL")
@@ -216,9 +212,9 @@ class ViewController: UIViewController {
                 }
                 
                 //sets nameField
-                if let nameField = jo["deviceName"]{
+                if let serialNumberField = jo["serialNumber"]{
                     DispatchQueue.main.async{
-                        self.nameField.text = String(describing: nameField)
+                        self.serNumField.text = String(describing: self.serNumField)
                     }
                 }
                 
